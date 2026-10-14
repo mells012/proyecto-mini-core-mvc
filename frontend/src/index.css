@@ -1,0 +1,253 @@
+:root {
+  --color-bg: #f4f6f9;
+  --color-surface: #ffffff;
+  --color-primary: #2a5ca8;
+  --color-primary-dark: #1d4480;
+  --color-text: #1f2933;
+  --color-muted: #6b7280;
+  --color-border: #e2e6ea;
+  --color-danger: #c0392b;
+  --color-success: #1e8a5f;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-link.active {
+  background: white;
+  color: var(--color-primary-dark);
+}
+
+.app-content {
+  flex: 1;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  color: var(--color-muted);
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field-wide {
+  grid-column: span 2;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.form-field input,
+.form-field select {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  height: fit-content;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-danger:hover {
+  background: var(--color-danger);
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.92rem;
+}
+
+.table th {
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.alert {
+  background: #fdecea;
+  color: var(--color-danger);
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.summary-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-card.highlight {
+  border-color: var(--color-success);
+  background: #eafaf2;
+}
+
+.summary-label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.summary-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.vendor-summary-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vendor-summary-totals {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.highlight-text {
+  color: var(--color-success);
+  font-weight: 700;
+}
