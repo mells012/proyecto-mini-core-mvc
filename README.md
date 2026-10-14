@@ -144,9 +144,9 @@ La app queda disponible en `http://127.0.0.1:5173/`.
 Ver [`DEPLOY.md`](./DEPLOY.md) para la guia completa paso a paso (Render
 como opcion principal, con alternativa usando Netlify para el frontend).
 
-- Repositorio: enlaza aqui tu repo de GitHub una vez lo subas.
-- Backend desplegado: `https://<tu-backend>.onrender.com`
-- Frontend desplegado: `https://<tu-frontend>.onrender.com`
+- Repositorio: https://github.com/mells012/proyecto-mini-core-mvc
+- Backend desplegado: https://mini-core-backend-sti4.onrender.com
+- Frontend desplegado: https://mini-core-frontend-4ia5.onrender.com
 
 ---
 
