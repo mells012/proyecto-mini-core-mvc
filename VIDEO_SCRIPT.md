@@ -4,9 +4,21 @@ Duracion estimada: 9-11 minutos. Estructura inspirada en la presentacion
 de referencia de semestres pasados (stack, patron MVT, modelos, logica de
 negocio, frontend y despliegue), aplicada a este proyecto propio.
 
+Enlaces del proyecto:
+
+- Repositorio: https://github.com/mells012/proyecto-mini-core-mvc
+- Backend (Render, Web Service): https://mini-core-backend-sti4.onrender.com
+- Frontend (Render, Static Site): https://mini-core-frontend-4ia5.onrender.com
+
 Antes de grabar: ten abiertos (1) el editor con el proyecto, (2) el
 backend corriendo en local o el admin de Django, (3) el frontend
 desplegado en la nube, y (4) este guion o las diapositivas como apoyo.
+
+> Nota: en el plan gratuito de Render el backend "duerme" tras un rato sin
+> uso (la primera carga puede tardar ~1 minuto), asi que abre su URL antes
+> de grabar. Ademas, la base SQLite se reinicia en cada redeploy y se
+> vuelve a llenar con los datos de ejemplo; las ventas que agregues durante
+> la demo no son permanentes.
 
 ---
 
@@ -175,7 +187,8 @@ como el navegador, curl o Postman mientras se explica.
 > "Vamos a ver el proyecto funcionando, ya desplegado en la nube."
 
 **Acciones a realizar en pantalla (sobre el sitio desplegado):**
-1. Abrir la URL del frontend desplegado.
+1. Abrir la URL del frontend desplegado
+   (https://mini-core-frontend-4ia5.onrender.com).
 2. En la pagina de Ventas: mostrar el listado de ventas ya cargado
    (datos iniciales), con su comision estimada.
 3. Agregar una venta nueva (elegir vendedor, monto, fecha) y mostrar que
@@ -224,14 +237,16 @@ dashboard de Render mostrando ambos servicios activos.
 > Muchas gracias por su atencion."
 
 **Mostrar en pantalla:** diapositiva final con los links del repositorio
-y del despliegue.
+(github.com/mells012/proyecto-mini-core-mvc) y del despliegue
+(mini-core-frontend-4ia5.onrender.com y mini-core-backend-sti4.onrender.com).
 
 ---
 
 ## Checklist rapido antes de grabar
 
-- [ ] Backend desplegado y accesible (probar la URL antes de grabar)
-- [ ] Frontend desplegado y accesible
+- [ ] Backend desplegado y accesible (abrir https://mini-core-backend-sti4.onrender.com
+      antes de grabar para que despierte; debe responder `{"status": "ok", ...}`)
+- [ ] Frontend desplegado y accesible (https://mini-core-frontend-4ia5.onrender.com)
 - [ ] Datos de ejemplo cargados (`seed_data`) para que la demo no empiece vacia
 - [ ] Repositorio en GitHub actualizado y publico (o con acceso dado al docente)
 - [ ] Pantalla y audio probados antes de grabar la version final
