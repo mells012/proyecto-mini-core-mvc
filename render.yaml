@@ -18,9 +18,9 @@ services:
       - key: DEBUG
         value: "False"
       - key: ALLOWED_HOSTS
-        value: "mini-core-backend.onrender.com"
+        value: "mini-core-backend-sti4.onrender.com"
       - key: CORS_ALLOWED_ORIGINS
-        value: "https://mini-core-frontend.onrender.com"
+        value: "https://mini-core-frontend-4ia5.onrender.com"
       - key: PYTHON_VERSION
         value: "3.13.0"
 
@@ -33,7 +33,7 @@ services:
     staticPublishPath: "./dist"
     envVars:
       - key: VITE_API_URL
-        value: "https://mini-core-backend.onrender.com/api"
+        value: "https://mini-core-backend-sti4.onrender.com/api"
     routes:
       # Necesario para que las rutas de React Router (ej. /comisiones)
       # funcionen al recargar o acceder directamente por URL.
